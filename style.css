@@ -1,0 +1,124 @@
+*{
+
+    margin : 0px;
+    padding : 0px;
+    box-sizing: border-box;
+}
+
+body{
+display: flex;
+justify-content : center;
+align-items: center;
+min-height: 130vh;
+background: linear-gradient(45deg, rgb(221, 0, 255), rgb(86, 90, 204));
+
+}
+
+.container{
+    position: relative;
+    width: 477px;
+    height: 500px;
+    background: white;
+    border-radius: 34px;
+    transition: 0.5s;
+
+}
+
+.container:hover{
+
+    /* width: 477px; */
+    height: 500px;
+}
+
+.imageBox{
+    position: absolute;
+    background: rgb(255, 255, 255);
+    border-radius: 25px;
+    width: 226px;
+    height: 224px;
+    transform: translate(-50%);
+    left: 50%;
+    top: -100px;
+    box-shadow: 0 3px 29px rgb(0, 0, 0);
+    overflow: hidden;
+}
+
+.imageBox img{
+height: 100%;
+width: 100%;
+object-fit: cover;
+top: 0;
+left: 0;
+
+
+
+}
+
+.container:hover .imageBox{
+
+    height: 350px;
+    width: 350px;
+    transition: 0.5s;
+}
+
+.main-content{
+
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.details{
+
+    padding: 40px;
+    text-align: center;
+    width: 100%;
+    transition: 0.5s;
+}
+
+.details h2{
+
+    font-family: sans-serif;
+    font-size: 1.5em;
+    font-weight: 600;
+
+}
+
+.details span{
+    font-size: 0.75em;
+    color: gray;
+}
+
+.tech{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    
+
+}
+
+.img{
+    position: relative;
+    width: 70px;
+    height: 70px;
+}
+
+
+.utility{
+
+/* padding: 10px; */
+margin: 10px;
+    
+}
+
+.utility:hover
+{
+    width: 110px;
+    height: 110px;
+    transition: 0.5s ;
+    transition-delay: 250ms;
+}
